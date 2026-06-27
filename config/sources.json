@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "Конфиг источников",
+    "last_updated": "2026-06-27T15:06:25.032728"
+  },
+  "blacklist": {
+    "enabled": true,
+    "name": " Чёрный список",
+    "description": "Работает всё, кроме заблокированного",
+    "priority": 1,
+    "urls": [
+      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt",
+      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt",
+      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS%2BAll_RUS.txt",
+      "https://solovyov-jenya2004.vercel.app/final_sorted",
+      "https://solovyov-jenya2004.vercel.app/final_sorted_base64"
+    ]
+  },
+  "whitelist": {
+    "enabled": true,
+    "name": " Белый список",
+    "description": "Работает только разрешённое (CIDR/SNI)",
+    "priority": 2,
+    "urls": [
+      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt",
+      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt",
+      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt",
+      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt",
+      "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt"
+    ]
+  },
+  "saveme": {
+    "enabled": true,
+    "name": " Экстренный режим",
+    "description": "Ссылки через Yandex/VK proxy",
+    "priority": 3,
+    "urls": [
+      "https://translate.yandex.ru/translate?url=https://bitbucket.org/igareck/vpn-config-for-russia/raw/main/WHITE-CIDR-RU-all.txt",
+      "https://translate.yandex.ru/translate?url=https://bitbucket.org/igareck/vpn-config-for-russia/raw/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt",
+      "https://translate.yandex.ru/translate?url=https://bitbucket.org/igareck/vpn-config-for-russia/raw/main/Vless-Reality-White-Lists-Rus-Mobile.txt"
+    ]
+  },
+  "user": {
+    "enabled": true,
+    "name": "👤 Пользовательский",
+    "description": "Ваши личные подписки",
+    "priority": 4,
+    "urls": [
+      "# Добавьте свои ссылки ниже — комментарии игнорируются"
+    ]
+  }
+}
